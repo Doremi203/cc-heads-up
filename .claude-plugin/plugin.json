@@ -1,0 +1,87 @@
+{
+  "name": "cc-heads-up",
+  "version": "0.2.0",
+  "description": "Claude Code sound cues on macOS: distinct system sounds when the agent asks, plans, needs permission, finishes or fails",
+  "author": {
+    "name": "Doremi203",
+    "url": "https://github.com/Doremi203"
+  },
+  "homepage": "https://github.com/Doremi203/cc-heads-up",
+  "repository": "https://github.com/Doremi203/cc-heads-up",
+  "license": "MIT",
+  "keywords": [
+    "sound",
+    "notifications",
+    "macos",
+    "hooks",
+    "afplay"
+  ],
+  "userConfig": {
+    "question": {
+      "type": "boolean",
+      "title": "Sound: asks a question (Ping)",
+      "description": "AskUserQuestion is called",
+      "default": true
+    },
+    "plan": {
+      "type": "boolean",
+      "title": "Sound: plan ready (Hero)",
+      "description": "ExitPlanMode is called",
+      "default": true
+    },
+    "permission": {
+      "type": "boolean",
+      "title": "Sound: permission prompt (Funk)",
+      "description": "PermissionRequest, instant",
+      "default": true
+    },
+    "done": {
+      "type": "boolean",
+      "title": "Sound: turn finished (Glass)",
+      "description": "Stop",
+      "default": true
+    },
+    "error": {
+      "type": "boolean",
+      "title": "Sound: turn failed (Basso)",
+      "description": "StopFailure: API error, rate limit, auth",
+      "default": true
+    },
+    "mcpInput": {
+      "type": "boolean",
+      "title": "Sound: MCP asks for input (Submarine)",
+      "description": "Elicitation",
+      "default": true
+    },
+    "idle": {
+      "type": "boolean",
+      "title": "Sound: idle reminder (Purr)",
+      "description": "Notification idle_prompt, ~60s after the reply",
+      "default": false
+    },
+    "subagentDone": {
+      "type": "boolean",
+      "title": "Sound: subagent finished (Pop)",
+      "description": "SubagentStop",
+      "default": false
+    },
+    "toolFailed": {
+      "type": "boolean",
+      "title": "Sound: tool failed (Bottle)",
+      "description": "PostToolUseFailure, interrupts excluded",
+      "default": false
+    },
+    "autoCompact": {
+      "type": "boolean",
+      "title": "Sound: auto-compact (Morse)",
+      "description": "PreCompact with trigger auto",
+      "default": false
+    },
+    "taskDone": {
+      "type": "boolean",
+      "title": "Sound: task completed (Blow)",
+      "description": "TaskCompleted",
+      "default": false
+    }
+  }
+}

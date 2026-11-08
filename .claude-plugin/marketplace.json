@@ -1,0 +1,16 @@
+{
+  "name": "cc-heads-up",
+  "owner": {
+    "name": "Doremi203"
+  },
+  "metadata": {
+    "description": "Sound cues for Claude Code on macOS"
+  },
+  "plugins": [
+    {
+      "name": "cc-heads-up",
+      "source": "./",
+      "description": "Claude Code sound cues on macOS: distinct system sounds when the agent asks, plans, needs permission, finishes or fails"
+    }
+  ]
+}
