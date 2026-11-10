@@ -1,6 +1,6 @@
 {
   "name": "cc-heads-up",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Claude Code sound cues on macOS: distinct system sounds when the agent asks, plans, needs permission, finishes or fails",
   "author": {
     "name": "Doremi203",
